@@ -1,0 +1,29 @@
+<div class="page">
+    <h2> Welcome to Hand Cricket</h2>
+    <br>
+    <hr>
+   <div>
+       <b>Your score : {{this.score}}</b>
+   </div>
+    <br>
+    <hr>
+    <div *ngIf="sub==true">
+        <b>Your Play: {{this.temp}}</b>
+    </div>
+    <br>
+    <hr>
+    <div *ngIf="sub==true">
+        <b>System play: {{rand}}</b>
+    </div>
+    <br>
+    <button class="button" (click)="sum(one);"  name="one" id="one" value="1">1</button>
+    <button class="button" (click)="sum(two);" name="two"  id="two" value="2">2</button>
+    <br>
+    <button class="button" (click)="sum(three);" name="three"  id="three" value="3">3</button>
+    <button class="button" (click)="sum(four);" name="four"  id="four" value="four">4</button>
+    <br>
+    <button class="button" (click)="sum(five);" name="five"  id="five" value="5">5</button>
+    <button class="button" (click)="sum(six);" name="six"  id="six" value="6">6</button>
+    <br>
+    <hr>
+</div>
